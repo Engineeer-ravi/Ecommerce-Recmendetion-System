@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Install gunicorn if needed
-pip install gunicorn
+# Install dependencies (Render uses pip3)
+pip3 install gunicorn
 
-# Run your Flask app with gunicorn
+# Run Flask app with gunicorn
 exec gunicorn app:app --workers 3 --bind 0.0.0.0:$PORT --timeout 120
-
