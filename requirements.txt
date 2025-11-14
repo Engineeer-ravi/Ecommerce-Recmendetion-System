@@ -1,8 +1,8 @@
-streamlit
+Flask
+gunicorn
 pandas
 numpy
 scikit-learn
-flask
+pymysql
+flask_sqlalchemy
 spacy
-matplotlib
-seaborn
